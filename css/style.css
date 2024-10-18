@@ -1,0 +1,223 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FBFBF2;
+    padding: 0 20px;
+    min-height: 95vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+
+.footer {
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #4F4789;
+    display: flex;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    color: #FBFBF2;
+    justify-content: center;
+}
+
+h1,h3{
+    color: #4F4789;
+}
+
+h2,h4{
+    color:#C490D1;
+}
+
+.navbar {
+    width: 90%;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #4F4789;
+    display: flex;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #FBFBF2; /* Text color for navbar links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #F19A3E; /* Text color for navbar links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.section{
+    padding: 10px;
+
+}
+
+.space{
+    margin: 10px;
+}
+
+.header{
+    margin: 0 10px;
+    padding: 15px;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    padding: 15px;
+    width: 95%;
+    top: 25%;
+}
+
+.imageOut{
+    margin: auto;
+    text-align: center;
+}
+
+.HeadPic{
+    border-radius: 50%;
+}
+
+.image{
+    border-radius: 25px;
+}
+
+body{
+    background-color: #C490D1; /* pas dit aan */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.icon{
+    font-size: 50px;
+    padding: 5px;
+}
+
+.icons a{
+    font-size: 50px;
+    padding: 5px;
+    color: #4F4789;
+}
+
+.section.text {
+    flex: 4; 
+}
+
+.section.image {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+figcaption{
+    color: #00000050;
+
+}
+
+table{
+    text-align:center;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td{
+    padding: 5px 15px;
+    word-wrap:break-word;
+}
+
+.vertline {
+    border-left: 2px solid #4F4789;
+    margin: 10px;
+  }
+
+.bar { 
+    background-color: #00000020; 
+    width: 100%; 
+    height: 25px;
+    border-radius: 15px; 
+    position: relative;
+} 
+
+.progbar { 
+    background-color: #C490D1;  
+    font-size: 20px; 
+    border-radius: 15px; 
+    height: 25px;
+    
+} 
+
+#java{
+    width: 65%;
+}
+#c{
+    width: 80%;
+}
+#webdesign{
+    width: 85%;
+}
+#sql{
+    width: 90%;
+}
+#python{
+    width: 85%;
+}
+
+input{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #00000050;
+}
+
+textarea{
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #00000050;
+}
+
+*{
+
+}
