@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
-      rel="shortcut icon"
-      href="img/favicon.ico"
-      type="image/x-icon"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
+
     <title>Pim Clement's Portfolio</title>
     <script
       src="https://use.fontawesome.com/releases/v6.5.0/js/all.js"
@@ -16,23 +19,57 @@
     ></script>
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="CV.html">Curriculum Vitae</a></li>
-        <li><a href="Ervaring.html">Experience</a></li>
-        <li><a href="Hobby.html">Hobbies</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg mb-4 mb-md-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pim</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.html">Curriculum Vitae</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Ervaring.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Hobby.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div>
         <h1 class="center">Curriculum Vitae</h1>
-        <div class="content">
-          <div class="section text">
-            <div>
+        <div class="section imageOut col-md-auto order-md-3">
+          <img
+            class="HeadPic img img-fluid"
+            src="img/HeadPic.png"
+            alt="Pim"
+            name="Picture of my head"
+          />
+        </div>
+        <div class="content  row m-auto">
+          <div class="section col-sm-6 text">
+            <div class="">
               <h3 class="center">Education</h3>
-              <table>
+              <table class="table table-striped">
                 <tr>
                   <td>Thomas More - Turnhout</td>
                   <td>Graduate Programming</td>
@@ -56,68 +93,187 @@
               </table>
             </div>
           </div>
-          <div class="vertline"></div>
-          <div class="section text">
-            <div>
+          <hr>
+          <div class="section col-xl-4 text">
+            <div class="">
               <h3 class="center">Language</h3>
-              <table>
+              <table class="table table-striped">
                 <tr>
                   <td>Dutch</td>
-                  <td>-</td>
+                  
                   <td>Native</td>
                 </tr>
                 <tr>
                   <td>English</td>
-                  <td>-</td>
+                  
                   <td>Very good</td>
                 </tr>
                 <tr>
                   <td>French</td>
-                  <td>-</td>
+                  
                   <td>Good</td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
-        <div class="content">
-          <div class="section text space">
-            <h3 class="center">Web Design</h3>
-            <div class="bar">
-              <div class="progbar" id="webdesign"></div>
+        <div class="content row m-auto ">
+          <h3 class="center">Coding Experience</h3>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators d-none d-md-flex">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
             </div>
-          </div>
-          <div class="section text space">
-            <h3 class="center">C#</h3>
-            <div class="bar">
-              <div class="progbar" id="c"></div>
+            <div class="carousel-inner rounded-3">
+              <div class="carousel-item active">
+                <img src="img/CVWebdesign.png" class="d-block w-100" alt="..." />
+                <div
+                  class="carousel-caption d-md-block cust-bg3 p-3 mb-5 rounded-5"
+                >
+                  <h5>Web Design</h5>
+                  <p class="d-none d-md-block">
+                    HTML, CSS, Javascript and Bootstrap since 2018.
+                  </p>
+                  <div class="bar">
+                    <div class="progbar" id="webdesign"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/CVCSharp.png" class="d-block w-100" alt="..." />
+                <div
+                  class="carousel-caption d-md-block cust-bg3 p-3 mb-5 rounded-5"
+                >
+                  <h5>C#</h5>
+                  <p class="d-none d-md-block">Having worked with since 2018.</p>
+                  <div class="bar">
+                    <div class="progbar" id="c"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/CVjava.png" class="d-block w-100" alt="..." />
+                <div
+                  class="carousel-caption d-md-block cust-bg3 p-3 mb-5 rounded-5"
+                >
+                  <h5>Java</h5>
+                  <p class="d-none d-md-block">Along with APIs and using streams since 2022.</p>
+                  <div class="bar">
+                    <div class="progbar" id="java"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/CVSQL.png" class="d-block w-100" alt="..." />
+                <div
+                  class="carousel-caption d-md-block cust-bg3 p-3 mb-5 rounded-5"
+                >
+                  <h5>SQL</h5>
+                  <p class="d-none d-md-block">Knowledge about SQL stored since 2021.</p>
+                  <div class="bar">
+                    <div class="progbar" id="sql"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/CVCodePy.png" class="d-block w-100" alt="..." />
+                <div
+                  class="carousel-caption d-md-block cust-bg3 p-3 mb-5 rounded-5"
+                >
+                  <h5>Python</h5>
+                  <p class="d-none d-md-block">Making applications since 2020.</p>
+                  <div class="bar">
+                    <div class="progbar" id="python"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="section text space">
-            <h3 class="center">Java</h3>
-            <div class="bar">
-              <div class="progbar" id="java"></div>
-            </div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="section text space">
-            <h3 class="center">SQL</h3>
-            <div class="bar">
-              <div class="progbar" id="sql"></div>
-            </div>
-          </div>
-          <div class="section text space">
-            <h3 class="center">Python</h3>
-            <div class="bar">
-              <div class="progbar" id="python"></div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <p> 2024 - Pim Clement</p>
-    </div>
+    <footer class="footer flex-column mt-4 mt-md-0">
+      <div>
+        <p class="mb-0">&copy; - 2024 - Pim Clement</p>
+      </div>
+      <div>
+        <span class="footericons">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/pim-clement-893996251/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/PimClem"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a target="_blank" href="https://x.com/Pim_Clem"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://use.fontawesome.com/releases/v6.5.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

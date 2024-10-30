@@ -9,26 +9,192 @@
       href="img/favicon.ico"
       type="image/x-icon"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Pim Clement's Portfolio</title>
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="CV.html">Curriculum Vitae</a></li>
-        <li><a href="Ervaring.html">Experience</a></li>
-        <li><a href="Hobby.html">Hobbies</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg mb-4 mb-md-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pim</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.html">Curriculum Vitae</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Ervaring.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Hobby.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
       <div class="header">
         <h1>Hobbies</h1>
         <p>Below you are able to see what I do in my free time.</p>
       </div>
+
+      <div class="content row m-auto ">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded-3">
+            <div class="carousel-item active">
+              <img src="img/HobVid.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Video Editing</h5>
+                <p class="mb-0">
+                  Creating content and entertaining others.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/HobPhoto.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Photoshopping</h5>
+                <p class="mb-0">
+                  Sketching ideas and illustrating art.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/HobProgram.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Programming</h5>
+                <p class="mb-0">
+                  Creating Applications to make life easier.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/HobGame.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Games</h5>
+                <p class="mb-0">
+                  Fueling the creativity flow whilst having a good time.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/HobCook.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Cooking</h5>
+                <p class="mb-0">
+                  Creating culinary magic to brighten everyday meals.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/HobBike.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block cust-bg3 p-3 pb-0 mb-5 rounded-5"
+              >
+                <h5 class="mt-5">Biking</h5>
+                <p class="mb-0">
+                  Casually admiring the scenery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
       <!-- ART 1-->
-      <div class="content">
-        <div class="section text">
+      <div class="content row">
+        <div class="section col-md-5 mx-5 order-md-3 image">
+          <img
+            class="image"
+            src="img/HobVid.png"
+            alt="Web App"
+            name="Picture of Project PHP"
+          />
+        </div>
+        <div class="section col-md-5 mx-5 order-md-2 text">
           <div>
             <h3>Video Editing</h3>
             <p>
@@ -54,18 +220,11 @@
             </p>
           </div>
         </div>
-        <div class="section image">
-          <img
-            class="image"
-            src="img/HobVid.png"
-            alt="Web App"
-            name="Picture of Project PHP"
-          />
-        </div>
+
       </div>
       <!-- ART 2-->
-      <div class="content">
-        <div class="section image">
+      <div class="content row">
+        <div class="section col-md-5 mx-5 image">
           <img
             class="image"
             src="img/HobProgram.png"
@@ -73,7 +232,7 @@
             name="Picture of a program"
           />
         </div>
-        <div class="section text">
+        <div class="section col-md-5 mx-5 text">
           <div>
             <h3>Programming</h3>
             <p>
@@ -86,13 +245,15 @@
             </p>
             <p>
               Over the years, I have dabbled in a variety of languages like: 
-              <ul>
+              <ul class="twocols">
                 <li>C#</li>
                 <li>Java</li>
                 <li>Python</li>
                 <li>Lua</li>
+                <li>SQL</li>
                 <li>HTML</li>
-                <li>css</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
                 <li>Javascript</li>
               </ul>
               <br />
@@ -113,7 +274,17 @@
         </div>
       </div>
       <!-- ART 3-->
-      <div class="section text">
+      <div class="content row">
+
+      <div class="section col-md-5 mx-5 image order-md-3">
+        <img
+          class="image"
+          src="img/HobGame.png"
+          alt="Intern"
+          name="Picture of Internship"
+        />
+      </div>
+      <div class="section col-md-5 mx-5 order-md-2 text">
         <div>
           <h3>Games</h3>
           <p>
@@ -133,17 +304,34 @@
           </p>
         </div>
       </div>
-      <div class="section image space">
-        <img
-          class="image"
-          src="img/HobGame.png"
-          alt="Intern"
-          name="Picture of Internship"
-        />
+    </main>
+    <footer class="footer flex-column mt-4 mt-md-0">
+      <div>
+
+        <p class="mb-0"> &copy; - 2024 - Pim Clement</p>
       </div>
-    </div>
-    <div class="footer">
-      <p>2024 - Pim Clement</p>
-    </div>
+      <div>
+
+        <span class="footericons">
+          <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pim-clement-893996251/"
+          ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://github.com/PimClem"
+            ><i class="fa-brands fa-github"></i
+              ></a>
+              <a target="_blank" href="https://x.com/Pim_Clem"
+              ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </span>
+            </div>
+    </footer>
+    <script
+    src="https://use.fontawesome.com/releases/v6.5.0/js/all.js"
+    crossorigin="anonymous"
+  ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   </body>
 </html>
